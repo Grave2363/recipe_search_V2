@@ -16,9 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button Search;
     private Button SignIn;
-
-
-    @SuppressLint("WrongViewCast")
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
