@@ -5,28 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/confPassword"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="302dp"
+        android:text="Comfirm Password"
+        android:textColor="#DF0B0B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginEnd="87dp"
-        android:layout_marginBottom="13dp"
         android:ems="10"
         android:imeActionLabel="password"
         android:inputType="textPassword"
         android:labelFor="@id/password"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="200dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
         android:layout_marginEnd="87dp"
         android:ems="10"
         android:imeActionLabel="email"
@@ -41,9 +56,8 @@
 
     <TextView
         android:id="@+id/email"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="45dp"
-        android:layout_marginStart="5dp"
         android:text="Email"
         android:textColor="#E81414"
         android:textSize="20sp"
@@ -57,40 +71,39 @@
 
     <TextView
         android:id="@+id/password"
-        android:layout_width="wrap_content"
+        android:layout_width="96dp"
         android:layout_height="45dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="352dp"
         android:text="Password"
         android:textColor="#DF0B0B"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="339dp" />
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="0dp"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="86dp"
         android:text="Submit"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
     <TextView
         android:id="@+id/regesterTitle"
         android:layout_width="207dp"
         android:layout_height="57dp"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="164dp"
         android:layout_marginEnd="86dp"
         android:layout_marginBottom="67dp"
-        android:text="Sign In"
+        android:text="Register"
         android:textColor="#54BA58"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
@@ -98,17 +111,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="85dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/confPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
     <Button
-        android:id="@+id/register"
-        android:layout_width="0dp"
+        android:id="@+id/SignIn"
+        android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_marginStart="115dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="82dp"
-        android:text="Register"
+        android:layout_marginEnd="86dp"
+        android:text="Sign In"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/submit" />
 </android.support.constraint.ConstraintLayout>

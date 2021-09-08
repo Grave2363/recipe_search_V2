@@ -18,6 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".accounts.SignIn"></activity>
+        <activity android:name=".searchClasses.Search"></activity>
     </application>
 
 </manifest>
