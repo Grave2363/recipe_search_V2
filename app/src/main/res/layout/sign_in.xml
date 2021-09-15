@@ -17,7 +17,7 @@
         android:inputType="textPassword"
         android:labelFor="@id/password"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintBottom_toTopOf="@+id/submitSignIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/password"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -70,7 +70,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/submitSignIn"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="115dp"
@@ -110,5 +110,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit" />
+        app:layout_constraintTop_toBottomOf="@+id/submitSignIn" />
 </android.support.constraint.ConstraintLayout>

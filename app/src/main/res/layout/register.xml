@@ -81,20 +81,6 @@
         tools:ignore="SpeakableTextPresentCheck"
         tools:layout_editor_absoluteY="339dp" />
 
-    <Button
-        android:id="@+id/submit"
-        android:layout_width="210dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="86dp"
-        android:text="Submit"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
-
     <TextView
         android:id="@+id/regesterTitle"
         android:layout_width="207dp"
@@ -119,7 +105,7 @@
         android:layout_marginEnd="85dp"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintBottom_toTopOf="@+id/SubmitReg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/confPassword"
@@ -130,11 +116,26 @@
         android:layout_width="210dp"
         android:layout_height="50dp"
         android:layout_marginStart="115dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="86dp"
         android:text="Sign In"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit" />
+        app:layout_constraintTop_toBottomOf="@+id/SubmitReg" />
+
+    <Button
+        android:id="@+id/SubmitReg"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="17dp"
+        android:text="Register"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/SignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPass" />
 </android.support.constraint.ConstraintLayout>

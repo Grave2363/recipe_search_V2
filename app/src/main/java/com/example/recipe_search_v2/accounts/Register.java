@@ -8,11 +8,12 @@ import android.widget.EditText;
 
 import com.example.recipe_search_v2.R;
 
-public class SignIn extends AppCompatActivity {
+public class Register extends AppCompatActivity {
     private EditText email;
     private EditText pass;
+    private EditText confPass;
     private Button submit;
-    private Button reg;
+    private Button signIn;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +22,10 @@ public class SignIn extends AppCompatActivity {
         // set vars
         email = findViewById(R.id.Email);
         pass = findViewById(R.id.Pass);
-        submit = findViewById(R.id.submitSignIn);
-        reg = findViewById(R.id.register);
+        confPass = findViewById(R.id.confirmPass);
+        submit = findViewById(R.id.SubmitReg);
+        signIn = findViewById(R.id.SignIn);
 
     }
 }
+
